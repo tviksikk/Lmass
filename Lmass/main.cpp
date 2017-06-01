@@ -6,7 +6,7 @@ int main()
    SpisokMass<int> a(200);
    a.add1(0);
    a.add1(1);
-   a.add2(2);
+   a.add2(0);
    a.del2();
    a.add2(3);
    a.add2(4);
@@ -17,11 +17,11 @@ int main()
    a.add1(8);
    a.add1(9);
    a.add1(10);
-   a.add1(11);
+   a.add1(10);
    a.add1(12);
-   a.add1(13);
+   a.add1(12);
    a.add1(14);
-   a.add2(15);
+   a.add2(1);
    a.add1(16);
    a.add1(17);
    a.add2(18);
@@ -31,6 +31,8 @@ int main()
    {
 	   std:: cout<<a.get0(i)<<" ";
    }
+   std::cout << std::endl;
+   a.printDoblication();
 
    std:: cin.get();
 };

@@ -24,6 +24,17 @@ class SpisokMass
 	void add1(T);
 	void add2(T);
 	bool end0(int);
+	void printDoblication()
+	{
+		for (int i = get1(); !end0(i); i = get2(i))
+		{
+			for (int z = get2(i); !end0(z); z = get2(z))
+			{
+				if(get0(i) == get0(z))
+    				std::cout << get0(i) << " ";
+			}
+		}
+	}
 };
  
 template <class T>
